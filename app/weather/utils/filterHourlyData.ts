@@ -1,3 +1,5 @@
+import { ForecastData } from "./types";
+
 interface FilterHourlyDataParams {
   forecast: ForecastData | undefined;
   is24HourFormat: boolean;
@@ -26,7 +28,7 @@ export const filterHourlyData = ({
     displayTime: string;
     temperature: number;
     weathercode: number;
-  }> = (forecast.hourly_temperature as number[]).map(
+  } | null> = (forecast.hourly_temperature as number[]).map(
     (
       temp: number,
       index: number
