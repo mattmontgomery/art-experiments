@@ -1,5 +1,5 @@
 import { fetchWeather } from "./fetchWeather";
-import { Location } from "./types";
+import { ForecastData, Location } from "./types";
 
 interface FetchCurrentWeatherParams {
   location: Location | null;
