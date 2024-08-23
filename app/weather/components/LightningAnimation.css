@@ -1,0 +1,65 @@
+@keyframes lightning-flash {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0.5; /* Flash 1ms */
+  }
+  2% {
+    opacity: 0; /* Pause 1ms */
+  }
+  3% {
+    opacity: 0.5; /* Flash 1ms */
+  }
+  4% {
+    opacity: 0; /* Pause 1ms */
+  }
+  5% {
+    opacity: 0.5; /* Flash 25ms */
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.4; /* Flash 5ms */
+  }
+  40% {
+    opacity: 0;
+  }
+  41% {
+    opacity: 0.5; /* Flash 1ms */
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0.4; /* Flash 1ms */
+  }
+  44% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0; /* End */
+  }
+}
+
+.lightning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Less vibrant flash */
+  opacity: 0;
+  pointer-events: none;
+  animation: lightning-flash 7s infinite ease-in-out;
+  animation-delay: 3s; /* Initial delay before the first flash */
+}
+
+.lightning:nth-child(odd) {
+  animation-delay: 5s; /* Slightly different timing for variety */
+}
+
+.lightning:nth-child(even) {
+  animation-delay: 7s;
+}

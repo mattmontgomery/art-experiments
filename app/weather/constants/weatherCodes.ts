@@ -1,0 +1,26 @@
+import { WeatherCode } from "./types";
+
+export const weatherCodeMap: Record<number, WeatherCode> = {
+  0: { description: "Clear sky", emoji: "☀️" },
+  1: { description: "Mainly clear", emoji: "🌤️" },
+  2: { description: "Partly cloudy", emoji: "⛅" },
+  3: { description: "Overcast", emoji: "☁️" },
+  45: { description: "Fog", emoji: "🌫️" },
+  48: { description: "Rime fog", emoji: "🌫️" },
+  51: { description: "Light drizzle", emoji: "🌦️", isRaining: true },
+  53: { description: "Moderate drizzle", emoji: "🌦️", isRaining: true },
+  55: { description: "Dense drizzle", emoji: "🌦️", isRaining: true },
+  56: { description: "Freezing drizzle: Light", emoji: "🌧️", isRaining: true },
+  57: { description: "Freezing drizzle: Dense", emoji: "🌧️", isRaining: true },
+  61: { description: "Slight rain", emoji: "🌧️", isRaining: true },
+  63: { description: "Moderate rain", emoji: "🌧️", isRaining: true },
+  65: { description: "Heavy rain", emoji: "🌧️", isRaining: true },
+  66: { description: "Freezing rain: Light", emoji: "🌧️", isRaining: true },
+  67: { description: "Freezing rain: Heavy", emoji: "🌧️", isRaining: true },
+  80: { description: "Slight rain showers", emoji: "🌧️", isRaining: true },
+  81: { description: "Moderate rain showers", emoji: "🌧️", isRaining: true },
+  82: { description: "Violent rain showers", emoji: "🌧️", isRaining: true },
+  95: { description: "Thunderstorm: Slight or moderate", emoji: "⛈️" },
+  96: { description: "Thunderstorm with slight hail", emoji: "⛈️" },
+  99: { description: "Thunderstorm with heavy hail", emoji: "⛈️" },
+};
