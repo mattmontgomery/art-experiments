@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes move-0 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes move-30 {
+  0% {
+    transform: translate(0, 0) rotate(30deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(35deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(30deg);
+  }
+}
+
+@keyframes move-60 {
+  0% {
+    transform: translate(0, 0) rotate(60deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(65deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(60deg);
+  }
+}
+
+@keyframes move-90 {
+  0% {
+    transform: translate(0, 0) rotate(90deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(95deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(90deg);
+  }
+}
+
+@keyframes move-120 {
+  0% {
+    transform: translate(0, 0) rotate(120deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(125deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(120deg);
+  }
+}
+
+@keyframes move-150 {
+  0% {
+    transform: translate(0, 0) rotate(150deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(155deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(150deg);
+  }
+}
+
+@keyframes move-180 {
+  0% {
+    transform: translate(0, 0) rotate(180deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(185deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(180deg);
+  }
+}
+
+@keyframes move-210 {
+  0% {
+    transform: translate(0, 0) rotate(210deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(215deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(210deg);
+  }
+}
+
+@keyframes move-240 {
+  0% {
+    transform: translate(0, 0) rotate(240deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(245deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(240deg);
+  }
+}
+
+@keyframes move-270 {
+  0% {
+    transform: translate(0, 0) rotate(270deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(275deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(270deg);
+  }
+}
+
+@keyframes move-300 {
+  0% {
+    transform: translate(0, 0) rotate(300deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(305deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(300deg);
+  }
+}
+
+@keyframes move-330 {
+  0% {
+    transform: translate(0, 0) rotate(330deg);
+  }
+  50% {
+    transform: translate(10px, 10px) rotate(335deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(330deg);
+  }
+}
+
+.animate-move-0 {
+  animation: move-0 infinite;
+}
+.animate-move-30 {
+  animation: move-30 infinite;
+}
+.animate-move-60 {
+  animation: move-60 infinite;
+}
+.animate-move-90 {
+  animation: move-90 infinite;
+}
+.animate-move-120 {
+  animation: move-120 infinite;
+}
+.animate-move-150 {
+  animation: move-150 infinite;
+}
+.animate-move-180 {
+  animation: move-180 infinite;
+}
+.animate-move-210 {
+  animation: move-210 infinite;
+}
+.animate-move-240 {
+  animation: move-240 infinite;
+}
+.animate-move-270 {
+  animation: move-270 infinite;
+}
+.animate-move-300 {
+  animation: move-300 infinite;
+}
+.animate-move-330 {
+  animation: move-330 infinite;
+}
